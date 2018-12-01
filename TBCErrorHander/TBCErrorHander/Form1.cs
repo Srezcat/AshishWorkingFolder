@@ -18,7 +18,8 @@ namespace TBCErrorHander
             InitializeComponent();
         }
 
-        string connection = "Data Source=Desktop-d2molfd;Initial Catalog=BugTracker;User ID=sa;Password=Ashish";
+        string connection = "Data Source=Desktop-d2molfd;Initial Catalog=BugTracker;User ID=sa;Password=Ashish157";
+
 
         //Process for Login
 
