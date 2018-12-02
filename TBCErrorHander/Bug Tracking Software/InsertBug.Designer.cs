@@ -19,7 +19,42 @@
             }
             base.Dispose(disposing);
         }
-
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 Namespace=Bug_Tracking_Software Type=InsertBug Member=button2)" Category="CodeSchema_Field" CodeSchemaProperty_IsPrivate="True" CommonLabel="button2" Icon="Microsoft.VisualStudio.Field.Private" IsDragSource="True" Label="button2 : Button" SourceLocation="(Assembly=&quot;file:///C:/Users/Dell/Desktop/AshishWorkingFolder/WorkingFolder/TBCErrorHander/Bug Tracking Software/InsertBug.Designer.cs&quot; StartLineNumber=248 StartCharacterOffset=44 EndLineNumber=248 EndCharacterOffset=51)" />
+    <Node Id="(@1 Namespace=Bug_Tracking_Software Type=InsertBug)" Visibility="Hidden" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 Namespace=Bug_Tracking_Software Type=InsertBug)" Target="(@1 Namespace=Bug_Tracking_Software Type=InsertBug Member=button2)" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Field" Label="Field" BasedOn="CodeSchema_Member" Icon="CodeSchema_Field" />
+    <Category Id="CodeSchema_Member" Label="Member" Icon="CodeSchema_Field" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" IsContainment="True" />
+  </Categories>
+  <Properties>
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsDragSource" Label="IsDragSource" Description="IsDragSource" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(82de7710-1fe3-44c2-b646-02a4b26c5a12.OutputPathUri)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="82de7710-1fe3-44c2-b646-02a4b26c5a12.OutputPathUri" Value="file:///C:/Users/Dell/Desktop/AshishWorkingFolder/WorkingFolder/TBCErrorHander/Bug Tracking Software/bin/Debug/Bug Tracking Software.exe" />
+  </Paths>
+</DirectedGraph>
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -206,6 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(632, 493);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);

@@ -84,9 +84,9 @@
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(156, 228);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 15);
+            this.label4.Size = new System.Drawing.Size(29, 15);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Role";
+            this.label4.Text = "Detail";
             // 
             // label3
             // 
@@ -104,9 +104,9 @@
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(127, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 22;
-            this.label2.Text = "User Name";
+            this.label2.Text = "UserName";
             // 
             // label1
             // 
@@ -159,14 +159,15 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(83, 188);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 13);
+            this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 32;
-            this.label6.Text = "Conmfirm Password";
+            this.label6.Text = "Re-type Password";
             // 
             // formSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(500, 349);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel1);
