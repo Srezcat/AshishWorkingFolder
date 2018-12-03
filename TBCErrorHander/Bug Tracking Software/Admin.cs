@@ -20,6 +20,21 @@ namespace Bug_Tracking_Software
             label3.Text = role;
         }
 
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //signs out from the current page
+            this.Close();
+            Login Lo = new Login();
+            Lo.Show();
+        }
+
+        private void bugsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //appoints the new bugs to programmer
+            AdminAppoint AdminBug = new AdminAppoint();
+            AdminBug.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();//closes when user clicks the button
@@ -37,20 +52,6 @@ namespace Bug_Tracking_Software
             aUser.Show();
         }
 
-        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //signs out from the current page
-            this.Close();
-            Login Lo = new Login();
-            Lo.Show();
-        }
-
-        private void bugsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //appoints the new bugs to programmer
-            AdminAppoint AdminBug = new AdminAppoint();
-            AdminBug.Show();
-        }
 
         private void liveRepoToolStripMenuItem_Click(object sender, EventArgs e)
         {

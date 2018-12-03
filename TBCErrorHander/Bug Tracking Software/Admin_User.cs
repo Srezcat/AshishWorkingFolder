@@ -24,6 +24,16 @@ namespace Bug_Tracking_Software
             this.Close();
         }
 
+        private void Admin_User_Load(object sender, EventArgs e)
+        {
+            label5.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             if (textPassword.Text == textPassword1.Text)
@@ -46,15 +56,6 @@ namespace Bug_Tracking_Software
 
         }
 
-        private void Admin_User_Load(object sender, EventArgs e)
-        {
-            label5.Hide();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
     
 }

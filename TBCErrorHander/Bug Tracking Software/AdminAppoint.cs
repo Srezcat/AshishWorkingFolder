@@ -27,28 +27,6 @@ namespace Bug_Tracking_Software
 
        
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //TO-DO Validation of form
-            if (txtAssignTO.Text != "")
-            {
-                //assign a bug to a progrommer
-                connection.Open();
-                string sqlQuery = "UPDATE Report Set Assign = '" + txtAssignTO.Text + "' WHERE Name = '" + textBox1.Text + "';";
-
-                cmd = new SqlCommand(sqlQuery, connection);
-                SqlDataReader DataRead = cmd.ExecuteReader();
-                MessageBox.Show("ASSIGNED");
-                connection.Close();
-
-            }
-            else {
-                MessageBox.Show("Please write ID Of a User");
-            }
-        }
-
-        
-
         private void button2_Click(object sender, EventArgs e)
         {
             //shows all the bugs when the button is clicked
@@ -77,6 +55,27 @@ namespace Bug_Tracking_Software
         private void AdminAppoint_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //TO-DO Validation of form
+            if (txtAssignTO.Text != "")
+            {
+                //assign a bug to a progrommer
+                connection.Open();
+                string sqlQuery = "UPDATE Report Set Assign = '" + txtAssignTO.Text + "' WHERE Name = '" + textBox1.Text + "';";
+
+                cmd = new SqlCommand(sqlQuery, connection);
+                SqlDataReader DataRead = cmd.ExecuteReader();
+                MessageBox.Show("ASSIGNED");
+                connection.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Please write ID Of a User");
+            }
         }
 
         private void liveRepoToolStripMenuItem_Click(object sender, EventArgs e)
