@@ -15,17 +15,17 @@ using OpenQA.Selenium.Chrome;
 
 namespace Bug_Tracking_Software
 {
-    public partial class Open1 : Form
+    public partial class User_Answer : Form
     {
         SqlConnection con = new SqlConnection();
         SqlCommand cmd;
 
-        public Open1()
+        public User_Answer()
         {
             InitializeComponent();
         }
 
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Baula\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Dell\Documents\Assignment.mdf;Integrated Security = True; Connect Timeout = 30");
 
 
         private void Open1_Load(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Bug_Tracking_Software
         {
 
             connection.Open();
-            string sqlQuery = "select * from BugReport where AppName='" + textBox1.Text+"'";//shows all data from  BugReport where AppName=textBox1.Text
+            string sqlQuery = "select * from Report where Name='" + textBox1.Text+"'";//shows all data from  BugReport where AppName=textBox1.Text
 
             cmd = new SqlCommand(sqlQuery, connection);
             SqlDataReader DataRead = cmd.ExecuteReader();
@@ -73,7 +73,7 @@ namespace Bug_Tracking_Software
 
                 //database connection
                 connection.Open();
-                string sqlQuery1 = "select * from Soln where AppName='" + textBox1.Text + "'";//shows all the datas from solution table where AppName=textBox1.Text
+                string sqlQuery1 = "select * from Solution where Name='" + textBox1.Text + "'";//shows all the datas from solution table where AppName=textBox1.Text
 
                 SqlCommand cmd2 = new SqlCommand(sqlQuery1, connection);
                 SqlDataReader DataRead1 = cmd2.ExecuteReader();
@@ -107,9 +107,14 @@ namespace Bug_Tracking_Software
             driver.Url = "https://github.com/login";
 
 
-            driver.FindElement(By.Id("login_field")).SendKeys("breakdowns.blasts@gmail.com");
-            driver.FindElement(By.Id("password")).SendKeys("Khadka15");
+            driver.FindElement(By.Id("login_field")).SendKeys("funnyfish1116@gmail.com");
+            driver.FindElement(By.Id("password")).SendKeys("GRrescue1");
             driver.FindElement(By.Name("commit")).Click();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

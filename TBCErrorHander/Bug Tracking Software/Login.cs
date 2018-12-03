@@ -33,8 +33,8 @@ namespace Bug_Tracking_Software
         private void button1_Click(object sender, EventArgs e)
         {
             //Login part when the user Logs in
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Baula\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select Role from Login where Username='" + textBox1.Text + "' and Password='" + textBox2.Text + "' ", con);
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dell\Documents\Assignment.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select Role from SignIn where Username='" + textBox1.Text + "' and Password='" + textBox2.Text + "' ", con);
             DataTable dt = new System.Data.DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count == 1)

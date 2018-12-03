@@ -29,7 +29,7 @@ namespace Bug_Tracking_Software
 
         }
         //naming a new sqlconnection
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Baula\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dell\Documents\Assignment.mdf;Integrated Security=True;Connect Timeout=30");
         String imgLocation = "";
         SqlCommand cmd;
         private void button1_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace Bug_Tracking_Software
             images = brs.ReadBytes((int)Streem.Length);
 
             connection.Open();
-            String sqlQuery = "Insert into BugReport(AppName, BugName, Description,Image)Values('" + comboBox1.Text+"','"+textBox2.Text+"','"+txtDes.Text+ "',@images)";
+            String sqlQuery = "Insert into Report(Name, BugName, Description,Image)Values('" + comboBox1.Text+"','"+textBox2.Text+"','"+txtDes.Text+ "',@images)";
             cmd = new SqlCommand(sqlQuery, connection);
             cmd.Parameters.Add(new SqlParameter("@images",images));
             int N = cmd.ExecuteNonQuery();

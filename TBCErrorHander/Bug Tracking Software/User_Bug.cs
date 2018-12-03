@@ -15,17 +15,17 @@ using OpenQA.Selenium.Chrome;
 
 namespace Bug_Tracking_Software
 {
-    public partial class Open : Form
+    public partial class User_Bug : Form
     {
         String userName;
         SqlCommand cmd;
-        public Open(String userName)
+        public User_Bug(String userName)
         {
             InitializeComponent();
             this.userName = userName;
         }
 
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Baula\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dell\Documents\Assignment.mdf;Integrated Security=True;Connect Timeout=30");
 
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace Bug_Tracking_Software
         private void button2_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string sqlQuery = "select * from BugReport where AppName='" + comboBox1.Text + "' AND AssignTo = '" + userName + "'";
+            string sqlQuery = "select * from Report where Name='" + comboBox1.Text + "' AND Assign = '" + userName + "'";
 
             cmd = new SqlCommand(sqlQuery, connection);
             SqlDataReader DataRead = cmd.ExecuteReader();
@@ -91,9 +91,9 @@ namespace Bug_Tracking_Software
         {
             
 
-            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Baula\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dell\Documents\Assignment.mdf;Integrated Security=True;Connect Timeout=30");
             connection1.Open();
-            cmd = new SqlCommand("insert into Soln (AppName,Solution)values('" + comboBox1.Text + "','" + textBox4.Text + "')", connection1);
+            cmd = new SqlCommand("insert into Solution (Name,Solution)values('" + comboBox1.Text + "','" + textBox4.Text + "')", connection1);
 
             cmd.ExecuteNonQuery();
             connection1.Close();
@@ -109,8 +109,8 @@ namespace Bug_Tracking_Software
             driver.Url = "https://github.com/login";
 
 
-            driver.FindElement(By.Id("login_field")).SendKeys("breakdowns.blasts@gmail.com");
-            driver.FindElement(By.Id("password")).SendKeys("Khadka15");
+            driver.FindElement(By.Id("login_field")).SendKeys("funnyfish1116@gmail.com");
+            driver.FindElement(By.Id("password")).SendKeys("GRrescue1");
             driver.FindElement(By.Name("commit")).Click();
 
         }

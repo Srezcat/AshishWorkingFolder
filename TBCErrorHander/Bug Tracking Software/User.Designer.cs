@@ -87,8 +87,8 @@
             // liveRepoToolStripMenuItem
             // 
             this.liveRepoToolStripMenuItem.Name = "liveRepoToolStripMenuItem";
-            this.liveRepoToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.liveRepoToolStripMenuItem.Text = "Live Repo";
+            this.liveRepoToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.liveRepoToolStripMenuItem.Text = "Repo";
             this.liveRepoToolStripMenuItem.Click += new System.EventHandler(this.liveRepoToolStripMenuItem_Click);
             // 
             // statusStrip
@@ -111,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(632, 453);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);

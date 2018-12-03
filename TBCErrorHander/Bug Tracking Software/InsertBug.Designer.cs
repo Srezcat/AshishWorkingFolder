@@ -19,42 +19,7 @@
             }
             base.Dispose(disposing);
         }
-<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
-  <Nodes>
-    <Node Id="(@1 Namespace=Bug_Tracking_Software Type=InsertBug Member=button2)" Category="CodeSchema_Field" CodeSchemaProperty_IsPrivate="True" CommonLabel="button2" Icon="Microsoft.VisualStudio.Field.Private" IsDragSource="True" Label="button2 : Button" SourceLocation="(Assembly=&quot;file:///C:/Users/Dell/Desktop/AshishWorkingFolder/WorkingFolder/TBCErrorHander/Bug Tracking Software/InsertBug.Designer.cs&quot; StartLineNumber=248 StartCharacterOffset=44 EndLineNumber=248 EndCharacterOffset=51)" />
-    <Node Id="(@1 Namespace=Bug_Tracking_Software Type=InsertBug)" Visibility="Hidden" />
-  </Nodes>
-  <Links>
-    <Link Source="(@1 Namespace=Bug_Tracking_Software Type=InsertBug)" Target="(@1 Namespace=Bug_Tracking_Software Type=InsertBug Member=button2)" Category="Contains" />
-  </Links>
-  <Categories>
-    <Category Id="CodeSchema_Field" Label="Field" BasedOn="CodeSchema_Member" Icon="CodeSchema_Field" />
-    <Category Id="CodeSchema_Member" Label="Member" Icon="CodeSchema_Field" />
-    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" IsContainment="True" />
-  </Categories>
-  <Properties>
-    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
-    <Property Id="CommonLabel" DataType="System.String" />
-    <Property Id="Icon" Label="Icon" DataType="System.String" />
-    <Property Id="IsContainment" DataType="System.Boolean" />
-    <Property Id="IsDragSource" Label="IsDragSource" Description="IsDragSource" DataType="System.Boolean" />
-    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
-    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
-    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
-  </Properties>
-  <QualifiedNames>
-    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
-    <Name Id="Member" Label="Member" ValueType="System.Object" />
-    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
-    <Name Id="Type" Label="Type" ValueType="System.Object" />
-  </QualifiedNames>
-  <IdentifierAliases>
-    <Alias n="1" Uri="Assembly=$(82de7710-1fe3-44c2-b646-02a4b26c5a12.OutputPathUri)" />
-  </IdentifierAliases>
-  <Paths>
-    <Path Id="82de7710-1fe3-44c2-b646-02a4b26c5a12.OutputPathUri" Value="file:///C:/Users/Dell/Desktop/AshishWorkingFolder/WorkingFolder/TBCErrorHander/Bug Tracking Software/bin/Debug/Bug Tracking Software.exe" />
-  </Paths>
-</DirectedGraph>
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -145,17 +110,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(55, 63);
+            this.label1.Location = new System.Drawing.Point(434, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "App Name";
+            this.label1.Text = "Application Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(55, 167);
+            this.label2.Location = new System.Drawing.Point(434, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 7;
@@ -165,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(55, 112);
+            this.label3.Location = new System.Drawing.Point(434, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 5;
@@ -173,7 +138,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(137, 112);
+            this.textBox2.Location = new System.Drawing.Point(339, 152);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(267, 20);
             this.textBox2.TabIndex = 1;
@@ -183,25 +148,25 @@
             this.txtDes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDes.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDes.Location = new System.Drawing.Point(122, 178);
+            this.txtDes.Location = new System.Drawing.Point(339, 217);
             this.txtDes.Multiline = true;
             this.txtDes.Name = "txtDes";
-            this.txtDes.Size = new System.Drawing.Size(282, 164);
+            this.txtDes.Size = new System.Drawing.Size(267, 74);
             this.txtDes.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(55, 383);
+            this.label4.Location = new System.Drawing.Point(55, 338);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Screenshot";
+            this.label4.Text = "Image Upload";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(137, 378);
+            this.button1.Location = new System.Drawing.Point(137, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -211,7 +176,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(137, 420);
+            this.button2.Location = new System.Drawing.Point(366, 338);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(202, 34);
             this.button2.TabIndex = 4;
@@ -221,9 +186,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(445, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 136);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 287);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 175);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -231,7 +196,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(137, 55);
+            this.comboBox1.Location = new System.Drawing.Point(339, 85);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(267, 21);
             this.comboBox1.TabIndex = 0;
@@ -241,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(632, 493);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);

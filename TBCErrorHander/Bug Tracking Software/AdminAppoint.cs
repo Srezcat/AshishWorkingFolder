@@ -18,7 +18,7 @@ namespace Bug_Tracking_Software
     public partial class AdminAppoint : Form
     {
        
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Baula\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dell\Documents\Assignment.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cmd;
         public AdminAppoint()
         {
@@ -34,7 +34,7 @@ namespace Bug_Tracking_Software
             {
                 //assign a bug to a progrommer
                 connection.Open();
-                string sqlQuery = "UPDATE BugReport Set AssignTo = '" + txtAssignTO.Text + "' WHERE AppName = '" + textBox1.Text + "';";
+                string sqlQuery = "UPDATE Report Set Assign = '" + txtAssignTO.Text + "' WHERE Name = '" + textBox1.Text + "';";
 
                 cmd = new SqlCommand(sqlQuery, connection);
                 SqlDataReader DataRead = cmd.ExecuteReader();
@@ -53,7 +53,7 @@ namespace Bug_Tracking_Software
         {
             //shows all the bugs when the button is clicked
             connection.Open();
-            string sqlQuery = "select AppName, BugName, Description from BugReport where AppName='" + textBox1.Text + "'";
+            string sqlQuery = "select Name, BugName, Description from Report where Name='" + textBox1.Text + "'";
 
             cmd = new SqlCommand(sqlQuery, connection);
             SqlDataReader DataRead = cmd.ExecuteReader();
@@ -87,8 +87,8 @@ namespace Bug_Tracking_Software
             driver.Url = "https://github.com/login";
 
 
-            driver.FindElement(By.Id("login_field")).SendKeys("breakdowns.blasts@gmail.com");
-            driver.FindElement(By.Id("password")).SendKeys("Khadka15");
+            driver.FindElement(By.Id("login_field")).SendKeys("funnyfish1116@gmail.com");
+            driver.FindElement(By.Id("password")).SendKeys("GRrescue1");
             driver.FindElement(By.Name("commit")).Click();
         }
     }

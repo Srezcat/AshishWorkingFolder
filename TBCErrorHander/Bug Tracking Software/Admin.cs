@@ -60,8 +60,8 @@ namespace Bug_Tracking_Software
             driver.Url = "https://github.com/login";
 
 
-            driver.FindElement(By.Id("login_field")).SendKeys("breakdowns.blasts@gmail.com");
-            driver.FindElement(By.Id("password")).SendKeys("Khadka15");
+            driver.FindElement(By.Id("login_field")).SendKeys("funnyfish1116@gmail.com");
+            driver.FindElement(By.Id("password")).SendKeys("GRrescue1");
             driver.FindElement(By.Name("commit")).Click();
         }
     }

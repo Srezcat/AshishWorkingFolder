@@ -41,9 +41,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(302, 252);
+            this.button2.Location = new System.Drawing.Point(328, 252);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 47);
+            this.button2.Size = new System.Drawing.Size(65, 47);
             this.button2.TabIndex = 9;
             this.button2.Text = "E&xit";
             this.button2.UseVisualStyleBackColor = true;
@@ -51,9 +51,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(160, 252);
+            this.button1.Location = new System.Drawing.Point(207, 252);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 47);
+            this.button1.Size = new System.Drawing.Size(68, 47);
             this.button1.TabIndex = 8;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,6 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(114, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
@@ -71,7 +72,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 134);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(112, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 6;
@@ -117,8 +119,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(204, 222);
+            this.label4.BackColor = System.Drawing.Color.DarkRed;
+            this.label4.Location = new System.Drawing.Point(422, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 12;
@@ -129,6 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(526, 361);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);

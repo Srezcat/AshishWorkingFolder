@@ -94,17 +94,17 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Open.cs">
+    <Compile Include="User_Bug.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Open.Designer.cs">
-      <DependentUpon>Open.cs</DependentUpon>
+    <Compile Include="User_Bug.Designer.cs">
+      <DependentUpon>User_Bug.cs</DependentUpon>
     </Compile>
-    <Compile Include="Open1.cs">
+    <Compile Include="User_Answer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Open1.Designer.cs">
-      <DependentUpon>Open1.cs</DependentUpon>
+    <Compile Include="User_Answer.Designer.cs">
+      <DependentUpon>User_Answer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Programmer.cs">
@@ -138,11 +138,11 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Open.resx">
-      <DependentUpon>Open.cs</DependentUpon>
+    <EmbeddedResource Include="User_Bug.resx">
+      <DependentUpon>User_Bug.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Open1.resx">
-      <DependentUpon>Open1.cs</DependentUpon>
+    <EmbeddedResource Include="User_Answer.resx">
+      <DependentUpon>User_Answer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Programmer.resx">
       <DependentUpon>Programmer.cs</DependentUpon>
